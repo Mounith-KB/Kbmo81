@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   
   function showPosition(position) {
-    const lat = position.coords.latitude;
-    const lon = position.coords.longitude;
+    const lat = 11.46018;
+    const lon = 77.409153;
     
     const iframe = `
       <iframe width="400" height="300" 
