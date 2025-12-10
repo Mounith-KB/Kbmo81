@@ -25,6 +25,7 @@
         padding-right: 10px;
         font-size: 30px;
       }
+
       #hobbies {
         color: rgb(42, 16, 0);
         background-color: rgb(240, 240, 222);
@@ -33,6 +34,15 @@
         font-size: 30px;
       }
       #Goals {
+        color: rgb(42, 16, 0);
+        background-color: rgb(240, 240, 222);
+        border-radius: 15px;
+        padding-left: 20px;
+        padding-right: 10px;
+        font-size: 30px;
+      }
+
+      #Contact {
         color: rgb(42, 16, 0);
         background-color: rgb(240, 240, 222);
         border-radius: 15px;
@@ -60,14 +70,24 @@
   </head>
   <body>
     <h1><br />Mounith K B <br />Roll NO:ED25B034</h1>
-    <h2 id="about">
-      <span style="font-size: 48px">About Me:</span> <br />Hii! I am a
-      first-year Dual Degree student in the Department of Engineering Design at IIT
-      Madras.
+    <h2 id="about" align="center">
+      <span id="about-title" style="font-size: 48px; cursor: pointer">
+        About Me
+      </span>
+      <span id="about-content" style="display: none">
+        <br />Hii! I am a first-year B.Tech student in the Department of
+        Engineering Design at IIT Madras. I am interested in web development,
+        gaming, football, and building cool technical projects.
+      </span>
     </h2>
+
     <h2 id="hobbies">
-      <span style="font-size: 48px">Hobbies</span>
-      <ul>
+      <center>
+        <span id="hobbies-title" style="font-size: 48px; cursor: pointer">
+          Hobbies
+        </span>
+      </center>
+      <ul id="hobbies-list" style="display: none">
         <li>Football</li>
         <li>Gaming</li>
         <li>Watching Anime</li>
@@ -75,14 +95,42 @@
         <li>Playing Guitar(Just a beginner)</li>
       </ul>
     </h2>
+
     <h2 id="Goals">
-      <span style="font-size: 48px">Goals</span>
-      <ul>
-        <li>Get a good grasp about HTML,CSS,and Javascript</li>
+      <center>
+        <span id="goals-title" style="font-size: 48px; cursor: pointer">
+          Goals
+        </span>
+      </center>
+      <ul id="goals-list" style="display: none">
+        <li>Get a good grasp about HTML, CSS, and JavaScript</li>
         <li>Learn to build cool web apps</li>
         <li>Develop innovative technical projects</li>
       </ul>
     </h2>
+
+    <h2 id="Contact">
+      <center>
+        <span id="contact-title" style="font-size: 48px; cursor: pointer">
+          Contact Me
+        </span>
+        <br />
+        <span id="contact-content" style="display: none">
+          LinkedIn:<a
+            href="https://www.linkedin.com/in/mounith-k-b-09b613385?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+          >
+            Mounith K B </a
+          ><br />
+          Instagram:<a
+            href="https://www.instagram.com/_mounith_.11?igsh=MTAwbzA0eGd6ejZwMw=="
+            target="_blank"
+            >_mounith_.11</a
+          >
+        </span>
+      </center>
+    </h2>
+
     <div id="map-container"></div>
     <div id="weatherapi-weather-widget-3"></div>
     <script
@@ -97,6 +145,6 @@
         >10 day hour by hour Gopichettipalaiyam weather</a
       ></noscript
     >
-    <script src="index.js"></script>
+    <script src="intro.js"></script>
   </body>
 </html>
