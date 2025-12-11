@@ -15,8 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     mapContainer.innerHTML = iframe;
   }
-
-  // Directly show the fixed position (no geolocation)
   showPosition();
 });
 const aboutTitle = document.getElementById('about-title');
